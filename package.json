@@ -1,0 +1,25 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "Projet OpenClassromms OhMyFood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Realex95/Projet-3.git"
+  },
+  "keywords": [
+    "Chelsea78400Realex95/Projet-2"
+  ],
+  "author": "Ryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Realex95/Projet-3/issues"
+  },
+  "homepage": "https://github.com/Realex95/Projet-3#readme",
+  "dependencies": {
+    "sass": "^1.45.1"
+  }
+}
