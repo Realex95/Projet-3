@@ -16,15 +16,16 @@ html {
   padding-top: 1%;
   padding-bottom: 1%;
 }
+#band p {
+  text-align: center;
+}
 #band h1 {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
 }
-#band p {
-  text-align: center;
-}
- button[type=submit] {
+
+button[type=submit] {
   align-content: center;
   margin: auto;
   display: flex;
@@ -36,7 +37,7 @@ html {
   box-shadow: 1px 1px 12px #ababab;
   transition: all 400ms;
 }
- button[type=submit]:hover {
+button[type=submit]:hover {
   transform: scale(1.02);
   cursor: pointer;
 }
@@ -82,6 +83,9 @@ main {
   width: 33%;
   background-color: white;
 }
+.box__two i {
+  margin-right: 2%;
+}
 .box__two ol {
   display: flex;
   flex-wrap: wrap;
@@ -100,10 +104,10 @@ main {
   text-align: center;
   list-style-type: none;
 }
-.box__two li:hover {
+.box__two li :hover {
   transform: scale(1.02);
 }
-.box__two li:hover i {
+.box__two li :hover i {
   color: purple;
 }
 .box__two li ::before {
@@ -118,9 +122,6 @@ main {
   align-items: left;
   justify-content: center;
   position: absolute;
-}
-.box__two i {
-  margin-right: 2%;
 }
 
 .title {
@@ -168,22 +169,19 @@ main {
 .text__name {
   padding-left: 20px;
   position: relative;
-  
 }
 .text__name p {
-  margin-top: -5%;  
+  margin-top: -5%;
 }
 
-.far
-{
+.far {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
   top: 20px;
 }
 
-.icone .fas
-{
+.icone .fas {
   color: transparent;
   background-image: linear-gradient(to top, #9356dc, rgba(255, 121, 218, 0.9));
   background-clip: text;
@@ -195,9 +193,7 @@ main {
   opacity: 0;
   transition: all 100ms ease-in-out;
 }
-
- .icone .fas:hover
-{
+.icone .fas:hover {
   opacity: 1;
   cursor: pointer;
 }
@@ -210,7 +206,6 @@ footer {
   display: flex;
   justify-content: space-around;
 }
-
 footer a {
   color: white;
   text-decoration: none;
@@ -218,10 +213,8 @@ footer a {
   align-items: center;
   justify-content: center;
 }
-
 footer i {
   margin-right: 10px;
 }
-
 
 /*# sourceMappingURL=index.css.map */

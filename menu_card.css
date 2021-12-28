@@ -1,85 +1,87 @@
-.image__restaurant img
-{
-    display: block;
-    width: 100%;
-    height: 40vh;
-    object-fit: cover;
+.image__restaurant img {
+  display: block;
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
 }
 
-.card__menu
-{
-    margin-top: -2rem;
-    position: relative;
-    border-radius: 25px 25px 0 0;
-    background: #f6f6f6;
+#logo a {
+  color: black;
+}
+#logo a :hover {
+  color: black;
+}
+#logo i {
+  position: absolute;
+  font-size: 3rem;
+  padding: 1%;
+  padding-left: 5%;
 }
 
-.restaurant__name
-{
+.card__menu {
+  margin-top: -2rem;
+  position: relative;
+  border-radius: 25px 25px 0 0;
+  background: #f6f6f6;
+}
+
+.restaurant__name {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 5%;
 }
-
-.restaurant__name i
-{
-    margin-right: 5%;
+.restaurant__name i {
+  margin-right: 5%;
 }
 
-section
-{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-left: 5%;
-    padding-right: 5%;
-    background: #f6f6f6;
-    
+section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 5%;
+  padding-right: 5%;
+  background: #f6f6f6;
 }
 
-.menu__category
-{
-    padding-left: 5%;
+.menu__category {
+  padding-left: 5%;
 }
 
-.menu__flat
-{
-    padding-bottom: 20px;
-    display: flex;
-    align-items: center;
-    padding: 1%;
-    border-radius: 25px;
-    margin-bottom: 20px;
-    width: 80%;
-    height: 60px;
-    background-color: white;
-    box-shadow: 1px 1px 12px #ababab;
+.menu__flat {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 60px;
+  background-color: white;
+  box-shadow: 1px 1px 12px #ababab;
 }
 
-.menu_description
-{
-    padding-left: 20px;
+.menu_description {
+  padding-left: 20px;
 }
 
-.price
-{
-    margin-left: auto;
-    padding-right: 20px;
+.price {
+  margin-left: auto;
+  padding-right: 20px;
 }
 
-h4,p
-{
-    padding: 0;
-    margin: 0;
+h4, p {
+  padding: 0;
+  margin: 0;
 }
 
-.btn__menu
-{
-    margin: 3%;
+.btn__menu {
+  margin: 3%;
 }
 
-.btn
-{
-    display: grid;
-    grid-template: none;
+.btn {
+  display: grid;
+  grid-template: none;
 }
+
+/*# sourceMappingURL=menu_cardcss.map */
+
