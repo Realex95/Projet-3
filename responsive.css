@@ -52,10 +52,10 @@
 
     #logo i
     {
-        position: absolute;
         font-size: 1.5rem;
         padding: 2%;
-        padding-left: 5%;
+        padding-left: 50%;
+        padding-bottom: 10px;
     }
 
     .restaurant__name h1
@@ -87,7 +87,6 @@
 
     button[type="submit"]
     {
-        width: 30%;
         text-align: center;
         display: flow-root;
         margin-bottom: 20px;
@@ -112,6 +111,6 @@
 
     footer i
     {
-        padding-left: 4rem;
+        padding-left: 2rem;
     }
 }
