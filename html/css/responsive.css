@@ -1,0 +1,147 @@
+@media screen and (max-width: 900px)
+{
+
+    .bar {
+        width: 15em;
+      }
+
+    #logo img
+    {
+        width: 100%;
+        height: 5vh;
+        object-fit: contain;
+    }
+
+    .box__two
+    {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box__one
+    {
+        width: 100%;
+        border-radius: 0px;
+        flex-wrap: nowrap;
+    }
+
+    main
+    {
+        flex-direction: column-reverse;
+    }
+
+    .article a
+    {
+        width: 100%;
+    }
+    
+    .text__name p
+    {
+        padding-top: 10px;
+    }
+
+    .box__two ol
+    {
+        width: 100%;
+        padding-right: 5%;
+    }
+
+    footer
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__title
+    {
+        padding-left: 10%;
+    }
+
+    .suggest_restaurant, .become__partner, .legal__mention, .contact
+    {
+        padding-left: 10%;
+        padding-right: none;
+    }
+
+    footer i
+    {
+        padding-left: 2rem;
+    }
+
+    /*/responsive menu card/*/
+
+    .image__restaurant img
+    {
+        height: 30vh;
+    }
+
+    #logo i
+    {
+        font-size: 1.5rem;
+        padding: 2%;
+        padding-left: 50%;
+        padding-bottom: 10px;
+    }
+
+    .card__menu
+    {
+        margin-top: -2rem;
+    }
+
+    .restaurant__name h1
+    {
+        font-size: x-large;
+        justify-content: normal;
+        margin-left: 1.5rem; 
+    }
+
+    .icone
+    {
+        top: -4rem;
+    }
+
+    .far,.icone .fas
+    {
+        font-size: 1.5rem;
+    }
+    
+    .card__category
+    {
+        grid-template-columns: none;
+        gap: 2rem;
+    }
+
+    .menu__item .menu__check .fa-check-circle  {
+        font-size: 2rem;
+      }
+
+      .menu__item .menu__flat{
+        width: 10px;
+      }
+
+    .menu__item:hover .menu__check {
+        opacity: 100%;
+        width: 3rem;
+      }
+
+    section .btn
+    {
+        top: 1rem;
+    }
+
+    button[type="submit"]
+    {
+        text-align: center;
+        display: flow-root;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .commandez
+    {
+        width: 50%;
+    }
+
+    
+}
