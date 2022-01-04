@@ -1,3 +1,187 @@
+@import 'utils/variable';
 
-
-/*# sourceMappingURL=menu_cardcss.map */
+@keyframes slideup {
+    from {
+      transform: translatey(20px);
+      opacity: 0%;
+    }
+    to {
+      transform: translatey(0px);
+      opacity: 100%;
+    }
+  }
+  
+  .image__restaurant{
+    & img {
+        display: block;
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+      }
+  }
+  
+  #logo{
+    & a {
+        color: black;
+        &:hover {
+            color: black;
+          }
+    }
+    i {
+        font-size: 3rem;
+        padding: 1%;
+        padding-left: 100%;
+      }
+  }
+  
+  .restaurant__name{
+    & h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Shrikhand";
+    }
+    & i {
+        margin-right: 5%;
+    }
+  }
+  
+  .icone
+  {
+    position: relative;
+    top: -5rem;
+  }
+  
+  .card__menu
+  {
+    position: relative;
+    margin-top: -3.6rem;
+    background: $white-color;
+    border-radius: 25px 25px 0 0;
+    padding-top: 5px;
+  }
+  
+  .card__category {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(3,1fr)
+  }
+  
+  .menu__category {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .menu__category__title {
+    margin-left: 5%;
+    position: relative;
+    font-family: "Shrikhand";
+    &::after {
+        content: "";
+        width: 3rem;
+        height: 5px;
+        background-color: $tertiary-color;
+        position: absolute;
+        bottom: -0.7rem;
+        left: 0;
+      }
+  }
+  
+  .menu__item {
+    background: $white-color;
+    border-radius: 25px;
+    box-shadow: 1px 1px 12px $light-grey;
+    display: flex;
+    animation: slideup 1s forwards;
+    opacity: 0;
+    margin: 0 5%;
+    &:nth-child(1) {
+        animation-delay: calc(1s / 5);
+      }
+    &:nth-child(2) {
+        animation-delay: calc(2s / 5);
+      }
+    &:nth-child(3) {
+        animation-delay: calc(3s / 5);
+      }
+    &:nth-child(4) {
+        animation-delay: calc(4s / 5);
+      }
+    &:nth-child(5) {
+        animation-delay: calc(5s / 5);
+      }
+    & .menu__flat {
+        padding: 1.5rem;
+        max-width: 100%;
+        overflow: hidden;
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        & .menu__description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+            white-space: nowrap;
+            & .p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        & .menu__price {
+            display: flex;
+            align-items: flex-end;
+        }         
+    }
+    .menu__check {
+        background: $tertiary-color;
+        cursor: pointer;
+        height: auto;
+        width: 0;
+        opacity: 0;
+        border-radius: 0 25px 25px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.4s ease, width 0.4s ease, opacity 0.4s ease;
+        & .fa-check-circle  {
+            font-size: 2.5rem;
+            color: $white-color;
+            transform: rotate(360deg);
+            transition: 1s ease;
+          }
+    }
+    &:hover{
+        & menu__check {
+            opacity: 100%;
+            width: 5rem;
+        }
+        & .fa-check-circle {
+            transform: rotate(0deg);
+        }
+    }
+  }
+  
+  h4, p {
+    padding: 0;
+    margin: 0;
+    font-family: "Shrikhand";
+  }
+  
+  .btn__menu {
+    margin: 3%;
+  }
+  
+  .btn {
+    display: grid;
+    grid-template: none;
+  }
+  
+  .commandez{
+    justify-content: center;
+      width: 10%;
+  }
+  
+  /*# sourceMappingURL=menu_cardcss.map */

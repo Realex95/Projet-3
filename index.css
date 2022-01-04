@@ -1,15 +1,79 @@
+@charset "UTF-8";
+@keyframes chargement {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+    visibility: hidden;
+  }
+}
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.1;
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+  }
+  46% {
+    transform: scaleX(0.81);
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.loader {
+  background: white;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  animation: chargement 0.1s 2s forwards;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loader .bar {
+  margin-top: 20px;
+  width: 30em;
+  height: 1em;
+  border-radius: 0.5em;
+  background: white;
+}
+.loader .bar .percentage {
+  background: #99E2D0;
+  height: 1em;
+  border-radius: 0.5em;
+  animation: progress 2s;
+}
+.loader .bar .loading {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
 html {
   width: 100%;
   height: 100%;
 }
 
-#logo
-{
+body {
+  font-family: "Roboto", "sans-sérif";
+}
+
+#logo {
   display: flex;
   align-items: center;
   padding: 1rem 0;
 }
-
 #logo img {
   display: flex;
   align-items: center;
@@ -18,7 +82,7 @@ html {
 }
 
 #band {
-  background-color: #f6f6f6;
+  background-color: white;
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -30,13 +94,14 @@ html {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
+  font-family: "Shrikhand";
 }
 
 button[type=submit] {
   align-content: center;
   margin: auto;
   display: flex;
-  background-image: linear-gradient(to top, #9356dc, rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(to top, #9356DC, rgba(255, 121, 218, 0.9));
   border-radius: 25px;
   border: none;
   color: white;
@@ -99,26 +164,23 @@ main {
   gap: 1%;
   transition: all 400ms;
 }
-
 .box__two ol :hover {
   transform: scale(1.02);
-  color: #9356dc;
+  color: #9356DC;
 }
-
 .box__two .orderNum {
-    background: #9356dc;
-    color: white;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 25px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: -20px;
-    top: 25px;
+  background: #9356DC;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 25px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -20px;
+  top: 25px;
 }
-
 .box__two li {
   background-color: #f6f6f6;
   padding-top: 2rem;
@@ -132,22 +194,9 @@ main {
   text-align: center;
   list-style-type: none;
 }
-
-.box__two li :hover i {
-  color: purple;
+.box__two li:hover i {
+  color: #9356DC;
 }
-
-content: counter(steps);
-  counter-increment: steps;
-  color: white;
-  background-color: purple;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: left;
-  justify-content: center;
-  position: absolute;
 
 .title {
   display: flex;
@@ -160,6 +209,7 @@ content: counter(steps);
   height: 30px;
   font-weight: bold;
   margin-left: 3rem;
+  font-family: "Shrikhand";
 }
 
 .article {
@@ -208,7 +258,7 @@ content: counter(steps);
 
 .icone .fas {
   color: transparent;
-  background-image: linear-gradient(to top, #9356dc, rgba(255, 121, 218, 0.9));
+  background-image: linear-gradient(to top, #9356DC, rgba(255, 121, 218, 0.9));
   background-clip: text;
   -webkit-background-clip: text;
   font-size: 2rem;
@@ -241,5 +291,7 @@ footer a {
 footer i {
   margin-right: 10px;
 }
+
+/*# sourceMappingURL=index.css.map */
 
 /*# sourceMappingURL=index.css.map */
