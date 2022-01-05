@@ -1,8 +1,8 @@
 @media screen and (max-width: 900px)
 {
 
-    .bar {
-        width: 15em;
+    .loader .bar{
+        width: 20rem;
       }
 
     #logo img
