@@ -58,15 +58,24 @@
         padding-left: 10%;
     }
 
-    .suggest_restaurant, .become__partner, .legal__mention, .contact
+    .suggest__restaurant
+    {
+        margin-bottom: -1.5rem;
+    } 
+    .become__partner, .legal__mention, .contact
     {
         padding-left: 10%;
-        padding-right: none;
+        padding-right: 0;
+        margin-top: -1.5rem;
+    }
+
+    footer .suggest__restaurant .fa-utensils{
+        padding-right: 8px;
     }
 
     footer i
     {
-        padding-left: 2rem;
+        padding-left: 5rem;
     }
 
     /*/responsive menu card/*/
@@ -117,12 +126,12 @@
       }
 
       .menu__item .menu__flat{
-        width: 10px;
+        width: 5px;
       }
 
     .menu__item:hover .menu__check {
         opacity: 100%;
-        width: 3rem;
+        width: 4rem;
       }
 
     section .btn
@@ -144,4 +153,11 @@
     }
 
     
+}
+
+@media screen and (max-width: 400px){
+    footer i
+    {
+        padding-left: 2rem;
+    }
 }

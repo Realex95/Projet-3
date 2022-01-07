@@ -41,20 +41,20 @@
   align-items: center;
   flex-direction: column;
 }
-.loader .bar {
+.bar {
   margin-top: 20px;
   width: 30em;
   height: 1em;
   border-radius: 0.5em;
-  background: white;
+  background: #eaeaea;
 }
-.loader .bar .percentage {
+.bar .percentage {
   background: #99E2D0;
   height: 1em;
   border-radius: 0.5em;
   animation: progress 2s;
 }
-.loader .bar .loading {
+.loading {
   font-size: 2rem;
   display: flex;
   justify-content: center;
@@ -67,6 +67,7 @@ html {
 
 body {
   font-family: "Roboto", "sans-sérif";
+  margin: 0;
 }
 
 #logo {
@@ -82,7 +83,7 @@ body {
 }
 
 #band {
-  background-color: white;
+  background-color: #f1efef; 
   width: 100%;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -90,11 +91,11 @@ body {
 #band p {
   text-align: center;
 }
+
 #band h1 {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
-  font-family: "Shrikhand";
 }
 
 button[type=submit] {
@@ -112,6 +113,11 @@ button[type=submit] {
 button[type=submit]:hover {
   transform: scale(1.02);
   cursor: pointer;
+}
+
+a
+{
+  text-decoration: none;
 }
 
 #city {
@@ -155,8 +161,13 @@ main {
   width: 33%;
   background-color: white;
 }
+
+.fa-mobile-alt{
+  margin-left: 15px;
+}
+
 .box__two i {
-  margin-right: 2%;
+  margin-right: 20px;
 }
 .box__two ol {
   display: flex;
@@ -166,7 +177,6 @@ main {
 }
 .box__two ol :hover {
   transform: scale(1.02);
-  color: #9356DC;
 }
 .box__two .orderNum {
   background: #9356DC;
@@ -193,9 +203,18 @@ main {
   position: relative;
   text-align: center;
   list-style-type: none;
+  font-weight: 700;
 }
+
+.box__two li:hover {
+  color: #9356DC;
+  background-color: #f5edff;
+  transition: transform 0.5s ease-in-out;
+}
+
 .box__two li:hover i {
   color: #9356DC;
+  transition: all 400ms;
 }
 
 .title {
@@ -209,7 +228,6 @@ main {
   height: 30px;
   font-weight: bold;
   margin-left: 3rem;
-  font-family: "Shrikhand";
 }
 
 .article {
@@ -241,19 +259,32 @@ main {
   border-radius: 20px 20px 0px 0px;
 }
 
+.new {
+  background: #a9e0d1;
+  padding: 10px;
+  border-radius: 15px;
+  position: absolute;
+  margin-top: -6rem;
+  right: 1.5rem;
+}
+
 .text__name {
   padding-left: 20px;
   position: relative;
 }
 .text__name p {
-  margin-top: -5%;
+  margin-top: -10px;
 }
 
 .far {
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   right: 1rem;
   top: 20px;
+}
+
+.far:hover {
+  display: none;
 }
 
 .icone .fas {
@@ -261,7 +292,7 @@ main {
   background-image: linear-gradient(to top, #9356DC, rgba(255, 121, 218, 0.9));
   background-clip: text;
   -webkit-background-clip: text;
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: absolute;
   right: 1rem;
   top: 20px;
@@ -273,6 +304,8 @@ main {
   cursor: pointer;
 }
 
+
+
 footer {
   width: 100%;
   height: 100%;
@@ -280,6 +313,12 @@ footer {
   color: white;
   display: flex;
   justify-content: space-around;
+  font-family: 'Roboto';
+}
+
+footer .footer__title{
+  font-family: 'ShrikHand';
+  font-weight: 400;
 }
 footer a {
   color: white;
@@ -288,10 +327,11 @@ footer a {
   align-items: center;
   justify-content: center;
 }
+.suggest__restaurant h3 , .become__partener h3 , .legal__mention h3 , .contact h3{
+  font-weight: 500;
+}
 footer i {
   margin-right: 10px;
 }
-
-/*# sourceMappingURL=index.css.map */
 
 /*# sourceMappingURL=index.css.map */

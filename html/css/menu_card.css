@@ -66,6 +66,7 @@
   margin-left: 5%;
   position: relative;
   font-family: "Shrikhand";
+  font-weight: 100;
 }
 .menu__category__title::after {
   content: "";
@@ -149,6 +150,10 @@
 }
 .menu__item:hover .fa-check-circle {
   transform: rotate(0deg);
+}
+
+h4{
+  font-weight: bolder;
 }
 
 h4, p {
