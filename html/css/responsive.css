@@ -31,9 +31,17 @@
         flex-direction: column-reverse;
     }
 
-    .article a
+    .article .card__restaurant
     {
         width: 100%;
+    }
+
+    .new {
+        bottom: 8.5rem;
+    }
+
+    .far.fa-heart, .fas.fa-heart{
+        bottom: 2.5rem;
     }
     
     .text__name p
@@ -105,13 +113,8 @@
         margin-left: 1.5rem; 
     }
 
-    .icone
-    {
-        top: -4rem;
-    }
-
-    .far,.icone .fas
-    {
+    .icone__menu .far.fa-heart,.icone__menu .fas.fa-heart{
+        bottom: 20px;
         font-size: 1.5rem;
     }
     

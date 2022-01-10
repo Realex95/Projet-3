@@ -239,7 +239,7 @@ main {
   margin: 0px auto;
   justify-content: space-evenly;
 }
-.article a {
+.article .card__restaurant {
   width: 40%;
   height: 200px;
   display: flex;
@@ -253,10 +253,15 @@ main {
   box-shadow: 1px 1px 12px #ababab;
   object-fit: cover;
 }
-.article a img {
+.article .card__restaurant img {
+  width: 100%;
   height: 110px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+}
+
+.article a{
+  color: black;
 }
 
 .new {
@@ -275,36 +280,34 @@ main {
 .text__name p {
   margin-top: -10px;
 }
-
-.far {
-  font-size: 1.5rem;
-  position: absolute;
-  right: 1rem;
-  top: 20px;
-}
-
-.far:hover {
-  display: none;
-}
-
-.icone .fas {
-  color: transparent;
-  background-image: linear-gradient(to top, #9356DC, rgba(255, 121, 218, 0.9));
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 1.5rem;
-  position: absolute;
-  right: 1rem;
-  top: 20px;
-  opacity: 0;
-  transition: all 100ms ease-in-out;
-}
-.icone .fas:hover {
+.icone:hover .fas.fa-heart {
   opacity: 1;
-  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
+.icone:hover .far.fa-heart {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
 
+.fas.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.far.fa-heart {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 25px;
+  bottom: 30px;
+  opacity: 1;
+}
 
 footer {
   width: 100%;

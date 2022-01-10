@@ -37,9 +37,41 @@
   margin-right: 5%;
 }
 
-.icone {
+.icone__menu {
   position: relative;
-  top: -5rem;
+  font-size: 2rem;
+}
+
+
+.icone__menu:active .fas.fa-heart, .icone__menu:hover .fas.fa-heart {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.icone__menu:active .far.fa-heart, .icone__menu:hover .far.fa-heart {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.icone__menu .fas.fa-heart {
+  font-size: 2rem;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+}
+
+.icone__menu  .far.fa-heart {
+  font-size: 2rem;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  opacity: 1;
 }
 
 .card__menu {
