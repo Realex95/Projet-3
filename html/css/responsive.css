@@ -36,23 +36,12 @@
         width: 100%;
     }
 
-    .new {
-        bottom: 8.5rem;
-    }
-
-    .far.fa-heart, .fas.fa-heart{
-        bottom: 2.5rem;
-    }
-    
-    .text__name p
-    {
-        padding-top: 10px;
-    }
 
     .box__two ol
     {
         width: 100%;
         padding-right: 5%;
+        margin: 0 0 0 30px
     }
 
     footer
@@ -70,6 +59,7 @@
     {
         margin-bottom: -1.5rem;
     } 
+
     .become__partner, .legal__mention, .contact
     {
         padding-left: 10%;
@@ -77,15 +67,21 @@
         margin-top: -1.5rem;
     }
 
+    .suggest__restaurant h3 , .become__partener h3 , .legal__mention h3 , .contact h3{
+        font-size: 20px;
+      }
+
     footer .suggest__restaurant .fa-utensils{
         padding-right: 8px;
     }
 
-    footer i
-    {
-        padding-left: 5rem;
-    }
+    .suggest__restaurant , .become__partener , .legal__mention , .contact{
+        padding-left: 10%;
+        padding-right: 0;
+       }
+}
 
+@media screen and (max-width: 1200px) {
     /*/responsive menu card/*/
 
     .image__restaurant img
@@ -96,9 +92,7 @@
     #logo i
     {
         font-size: 1.5rem;
-        padding: 2%;
-        padding-left: 50%;
-        padding-bottom: 10px;
+    padding-left: 20px;
     }
 
     .card__menu
@@ -108,14 +102,12 @@
 
     .restaurant__name h1
     {
-        font-size: x-large;
-        justify-content: normal;
-        margin-left: 1.5rem; 
+        justify-content: center;
+        margin-left: 2rem; 
     }
 
     .icone__menu .far.fa-heart,.icone__menu .fas.fa-heart{
-        bottom: 20px;
-        font-size: 1.5rem;
+        bottom: 2rem;
     }
     
     .card__category
@@ -149,18 +141,14 @@
         margin-bottom: 20px;
         margin-top: 20px;
     }
-
-    .commandez
-    {
-        width: 50%;
-    }
-
-    
 }
 
-@media screen and (max-width: 400px){
-    footer i
-    {
-        padding-left: 2rem;
+@media screen and (max-width: 530px)
+{
+    .restaurant__name h1
+    {   
+        justify-content: normal;
     }
+
+   
 }
