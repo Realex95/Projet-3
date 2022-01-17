@@ -1,0 +1,251 @@
+@charset "UTF-8";
+@include chargement;
+@include progress;
+@include loader;
+
+
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", "sans-sérif";
+  margin: 0;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  & img {
+    @include center;
+  }
+}
+
+#band {
+  background-color: #f1efef; 
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  & p {
+    text-align: center;
+  }
+  & h1 {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+}
+
+button[type=submit] {
+  align-content: center;
+  margin: auto;
+  display: flex;
+  background-image: linear-gradient(to top, #9356DC, rgba(255, 121, 218, 0.9));
+  @include radiusbutton;
+  border: none;
+  color: white;
+  padding: 14px;
+  box-shadow: 1px 1px 12px #ababab;
+  transition: all 400ms;
+  &:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+}
+
+a
+{
+  text-decoration: none;
+}
+
+#city {
+  background-color: #eaeaea;
+  margin: auto;
+  @include center;
+  & i {
+    margin-right: 10px;
+  }
+}
+
+.content {
+  margin: 32px 0 16px 0;
+  height: auto;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box__one, .box__two {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  @include radiusbutton;
+  background-color: #F2F2F2;
+  margin-bottom: 20px;
+}
+
+.box__one {
+  width: 65%;
+}
+
+.box__two {
+  width: 33%;
+  background-color: white;
+  & i {
+    margin-right: 20px;
+  }
+  & ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    transition: all 400ms;
+    padding-inline-start: 0;
+    margin: 0 16px;
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+  & .orderNum {
+    background: #9356DC;
+    color: white;
+    width: 2rem;
+    height: 2rem;
+    @include radiusbutton;
+    position: absolute;
+    @include center;
+    left: -20px;
+    top: 25px;
+  }
+  & li {
+    background-color: #f6f6f6;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    @include radiusbutton;
+    width: 100%;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    list-style-type: none;
+    font-weight: 700;
+  }
+  &:hover {
+    color: #9356DC;
+    background-color: #f5edff;
+    transition: transform 0.2s ease-in-out;
+    & i {
+      color: #9356DC;
+      transition: all 400ms;
+    }
+  }
+}
+
+.fa-mobile-alt{
+  margin-left: 15px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 3rem;
+  & h2 {
+    height: 30px;
+    font-weight: bold;
+  }  
+}
+
+.article {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 0px auto;
+  justify-content: space-evenly;
+  & .card__restaurant {
+    width: 40%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    @include radiusbutton;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 12px #ababab;
+    object-fit: cover;
+    & img {
+      width: 100%;
+      height: 110px;
+      object-fit: cover;
+      @include radius25px;
+    }
+  }
+  & a{
+    color: black;
+  }
+}
+
+.new {
+  background: #a9e0d1;
+  padding: 5px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 9rem;
+  right: 0.5rem;
+  color: #006400;
+}
+
+.text__name {
+  padding-left: 20px;
+  position: relative;
+  & p {
+    margin-top: -10px;
+  }
+}
+
+.icone
+{
+  &.fas.fa-heart {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+  }
+  & .far.fa-heart {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+    opacity: 1;
+  }
+  &:hover {
+    & .fas.fa-heart {
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+    }
+    & .far.fa-heart {
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+@include footer;
+/*# sourceMappingURL=index.css.map */
