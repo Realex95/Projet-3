@@ -148,7 +148,11 @@
     .restaurant__name h1
     {   
         justify-content: normal;
+        font-size: 1.5rem;
     }
 
-   
+    .icone__menu .far.fa-heart, .icone__menu .fas.fa-heart {
+        bottom: 1.5rem;
+    }
+    
 }
