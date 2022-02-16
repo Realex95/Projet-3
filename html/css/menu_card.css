@@ -192,6 +192,11 @@ h4, p {
   margin: 0;
 }
 
+p{
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .btn__menu {
   margin: 3%;
 }
